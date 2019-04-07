@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-
     private Inventory inventory;
     public GameObject itemButton;
+   
 
     private void Start()
     {
@@ -18,8 +18,6 @@ public class Pickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // spawn the sun button at the first available inventory slot ! 
-
-
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false)
