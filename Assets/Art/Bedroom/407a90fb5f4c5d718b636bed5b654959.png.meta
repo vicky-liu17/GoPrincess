@@ -53,8 +53,9 @@ TextureImporter:
     21300096: desk
     21300098: bigBed
     21300100: plant2
+    21300102: Stairs
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1165,13 +1166,33 @@ TextureImporter:
         width: 39
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 64af30998e7d345b4b9c9df79d18f5c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 97
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f63d823d1a23404b875dd2ad2af8620
       vertices: []
       indices: 
       edges: []
