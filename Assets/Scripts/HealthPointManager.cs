@@ -8,6 +8,8 @@ public class HealthPointManager : MonoBehaviour
     static public int initialHealthPoint = 60;
     public Slider healthBar;
     private const float coef = 0.4f;
+    static int gameEnd = 0;
+    public GUISkin theSkin;
 
     //Text text;
 
@@ -24,7 +26,8 @@ public class HealthPointManager : MonoBehaviour
         healthPoint -= coef * Time.deltaTime;
         if (healthPoint < 0)
         {
-            gameObject.SetActive(false);
+            //GameObject.FindGameObjectWithTag("Player").SetActive(false);
+            gameEnd = 1;
         }
         //text.text = "" + healthPoint;
         healthBar.value = healthPoint;
@@ -39,5 +42,14 @@ public class HealthPointManager : MonoBehaviour
         healthPoint = healthPoint - healthPointsToDeduct;
     }
 
+    private void OnGUI()
+    {
+        GUI.skin = theSkin;
 
+        if (gameEnd == 1)
+        {
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, 500, 100), "Game Over!");
+            Time.timeScale = 0;
+        }
+    }
 }
