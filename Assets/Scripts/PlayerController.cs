@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
-        firstenter=false;
+        firstenterkitchen=false;
       
     }
 
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         playerMoving = false;
         Scene currentScene = SceneManager.GetActiveScene ();
         string sceneName = currentScene.name;
-        if (sceneName == "kitchen" && !firstenter){
+        if (sceneName == "kitchen" && !firstenterkitchen){
             myRigidbody.transform.position = new Vector2(0,0);
             firstenter=true;
         }
