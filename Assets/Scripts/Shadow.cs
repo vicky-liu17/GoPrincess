@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shadow : MonoBehaviour
 {
     // Start is called before the first frame update
-    int healthPointsToDeduct = 6;
+    int healthPointsToDeduct = 3;
     void Start()
     {
         Destroy(gameObject, 2);
