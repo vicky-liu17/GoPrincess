@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: 8e3b4a527a3d3400889c7b7e2599a207
+guid: 70a18d79fd33e45e5aea34a8f5131c53
 TextureImporter:
   fileIDToRecycleName:
-    21300000: floor1
-    21300002: border
-    21300004: border2
-    21300006: border3
-    21300008: hyptosis_tile-art-batch-4_0
+    21300000: BigCrack
+    21300002: mediumCrack
+    21300004: small_crack
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -36,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -50,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,10 +63,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,10 +74,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -87,10 +85,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: iPhone
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,10 +96,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor1
+      name: BigCrack
       rect:
         serializedVersion: 2
-        x: 256
-        y: 160
-        width: 32
-        height: 32
+        x: 97
+        y: 448
+        width: 29
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,19 +123,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c8c68f97f4c44b4ba40e4322e41d4ec
+      spriteID: d33d7fa60e1fb448e9a4e3a35fff4bdf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: border
+      name: mediumCrack
       rect:
         serializedVersion: 2
-        x: 448
-        y: 551
-        width: 64
-        height: 13
+        x: 65
+        y: 448
+        width: 27
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,59 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 525167fca5ee84908b028ac2a85e2eda
+      spriteID: 6295b93b36a7d4a349de8add464bf650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: border2
+      name: small_crack
       rect:
         serializedVersion: 2
-        x: 464
-        y: 627
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39421735f45aa47969b65cf95ccc74f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: border3
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 611
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b66ac66159eba4317b65165955b07a31
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hyptosis_tile-art-batch-4_0
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 195
-        width: 47
-        height: 40
+        x: 37
+        y: 452
+        width: 23
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e99d117a267747e6a530f08afcbc2e6
+      spriteID: bd5c11a64db034a38a37458c7f5fbf2f
       vertices: []
       indices: 
       edges: []
@@ -213,7 +171,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 877d91a75dd4940139d6e4b5cf394024
+    spriteID: 9c1a65da753674bb08a4b7ef79b21894
     vertices: []
     indices: 
     edges: []

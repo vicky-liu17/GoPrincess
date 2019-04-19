@@ -33,15 +33,15 @@ TextureImporter:
     21300056: 407a90fb5f4c5d718b636bed5b654959_28
     21300058: 407a90fb5f4c5d718b636bed5b654959_29
     21300060: 407a90fb5f4c5d718b636bed5b654959_30
-    21300062: 407a90fb5f4c5d718b636bed5b654959_31
+    21300062: bookshelf
     21300064: 407a90fb5f4c5d718b636bed5b654959_32
-    21300066: 407a90fb5f4c5d718b636bed5b654959_33
+    21300066: cupboard
     21300068: 407a90fb5f4c5d718b636bed5b654959_34
     21300070: 407a90fb5f4c5d718b636bed5b654959_35
     21300072: 407a90fb5f4c5d718b636bed5b654959_36
     21300074: 407a90fb5f4c5d718b636bed5b654959_37
     21300076: 407a90fb5f4c5d718b636bed5b654959_38
-    21300078: 407a90fb5f4c5d718b636bed5b654959_39
+    21300078: fence1
     21300080: 407a90fb5f4c5d718b636bed5b654959_40
     21300082: 407a90fb5f4c5d718b636bed5b654959_41
     21300084: 407a90fb5f4c5d718b636bed5b654959_42
@@ -54,6 +54,7 @@ TextureImporter:
     21300098: bigBed
     21300100: plant2
     21300102: Stairs
+    21300104: little_fence
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -778,13 +779,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 407a90fb5f4c5d718b636bed5b654959_31
+      name: bookshelf
       rect:
         serializedVersion: 2
-        x: 144
-        y: 336
-        width: 276
-        height: 144
+        x: 336
+        y: 263
+        width: 48
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,12 +819,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 407a90fb5f4c5d718b636bed5b654959_33
+      name: cupboard
       rect:
         serializedVersion: 2
         x: 288
         y: 263
-        width: 96
+        width: 48
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -938,13 +939,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 407a90fb5f4c5d718b636bed5b654959_39
+      name: fence1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 156
-        height: 95
+        y: 48
+        width: 144
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1186,13 +1187,33 @@ TextureImporter:
         width: 144
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 0f63d823d1a23404b875dd2ad2af8620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: little_fence
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae7ea0adba94492cb0852553f513059
       vertices: []
       indices: 
       edges: []
