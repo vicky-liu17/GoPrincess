@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private bool playerMoving;
     private Vector2 lastMove;
     private Rigidbody2D myRigidbody;
-    private bool firstenter;
+    private bool firstenterkitchen;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         string sceneName = currentScene.name;
         if (sceneName == "kitchen" && !firstenterkitchen){
             myRigidbody.transform.position = new Vector2(0,0);
-            firstenter=true;
+            firstenterkitchen=true;
         }
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) {
         	//transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
