@@ -7,8 +7,11 @@ TextureImporter:
     21300004: border2
     21300006: border3
     21300008: hyptosis_tile-art-batch-4_0
+    21300010: floor
+    21300012: hyptosis_tile-art-batch-4_1
+    21300014: hyptosis_tile-art-batch-4_2
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -199,13 +202,73 @@ TextureImporter:
         width: 47
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1e99d117a267747e6a530f08afcbc2e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 641
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae5f90f94e49da4eadf0b53f680cea2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis_tile-art-batch-4_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 673
+        width: 93
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3649405155e03cf4ca11924eceac4f35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyptosis_tile-art-batch-4_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 733
+        width: 33
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76238999579994479df80f44cb9be7b
       vertices: []
       indices: 
       edges: []

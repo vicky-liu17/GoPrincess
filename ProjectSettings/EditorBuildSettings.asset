@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Corridor.unity
     guid: 05f7293067c446943bd3601b233826f9
+  - enabled: 1
+    path: Assets/Scenes/Chamber.unity
+    guid: 9ba926b8b84c2e44a9d27ee01328ed17
   m_configObjects: {}
