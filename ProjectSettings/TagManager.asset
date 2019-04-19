@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Dog
+  - dog_unseen
+  - Dog_thought_pos
   layers:
   - Default
   - TransparentFX

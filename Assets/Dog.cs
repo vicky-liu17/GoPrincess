@@ -21,7 +21,10 @@ public class Dog : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("meet dog");
-        //Instantiate(itemButton, GameObject.FindGameObjectWithTag("Dog").transform, false);
-        Instantiate(itemButton, inventory.slots[1].transform, false);
+        //Transform transform = GameObject.FindGameObjectWithTag("dog_unseen").transform;
+        Transform transform = GameObject.FindGameObjectWithTag("Dog_thought_pos").transform;
+
+        //Instantiate(itemButton, transform, false);
+        Instantiate(itemButton, transform, false);
     }
 }
