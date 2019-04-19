@@ -48,7 +48,7 @@ public class HealthPointManager : MonoBehaviour
 
         if (gameEnd == 1)
         {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2, 500, 100), "Game Over!");
+            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2, 500, 100), "Game Over!");
             Time.timeScale = 0;
         }
     }
