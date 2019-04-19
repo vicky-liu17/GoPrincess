@@ -11,13 +11,16 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMove;
     private Rigidbody2D myRigidbody;
     private bool firstenterkitchen;
+    private bool firstentercorrider;
+    private string lastSceneName;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
         firstenterkitchen=false;
-      
+        Scene currentScene = SceneManager.GetActiveScene ();
+        lastSceneName="Hall";
     }
 
     // Update is called once per frame
@@ -26,9 +29,24 @@ public class PlayerController : MonoBehaviour
         playerMoving = false;
         Scene currentScene = SceneManager.GetActiveScene ();
         string sceneName = currentScene.name;
-        if (sceneName == "kitchen" && !firstenterkitchen){
-            myRigidbody.transform.position = new Vector2(0,0);
+        if (sceneName == "kitchen" && !firstenterkitchen && lastSceneName=="Hall"){
+            if(lastSceneName=="Hall")
+                myRigidbody.transform.position = new Vector2(-2,0);
+            else if(lastSceneName=="Corridor")
+                myRigidbody.transform.position = new Vector2(2,0);
             firstenterkitchen=true;
+            lastSceneName=sceneName;
+        }
+        if (sceneName != "kitchen"){
+            firstenterkitchen=false;
+        }
+        if (sceneName == "Corridor" && !firstentercorrider && lastSceneName=="kitchen"){
+            myRigidbody.transform.position = new Vector2(-2,0);
+            firstentercorrider=true;
+            lastSceneName=sceneName;
+        }
+        if (sceneName != "Corridor"){
+            firstentercorrider=false;
         }
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) {
         	//transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
