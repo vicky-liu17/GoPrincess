@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+  theSkin: {fileID: 0}
 --- !u!114 &273970609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,6 +775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+  theSkin: {fileID: 0}
 --- !u!114 &433441799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,6 +1084,13 @@ MonoBehaviour:
   - {fileID: 487477823}
   - {fileID: 2032801668}
   - {fileID: 1550050374}
+  destroyedObj:
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfDestroyedObj: 0
 --- !u!61 &566416107
 BoxCollider2D:
   m_ObjectHideFlags: 0
