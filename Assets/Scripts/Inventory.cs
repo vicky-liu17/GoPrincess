@@ -6,5 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
     public GameObject[] slots;
+    public string[] destroyedObj;
+    public int numberOfDestroyedObj = 0;
 
 }
