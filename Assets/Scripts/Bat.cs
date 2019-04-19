@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class Bat : MonoBehaviour
 {
+    int healthPointsToDeduct = 6;
     internal Transform thisTransform;
  
     // The movement speed of the object
@@ -67,6 +68,7 @@ public class Bat : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj){
         Debug.Log(1);
+        HealthPointManager.DeductHealthPoint(healthPointsToDeduct);
     }
 }
  
