@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalVariable : MonoBehaviour
+public class GlobalVariable
 {
     static public float healthPoint;
 }

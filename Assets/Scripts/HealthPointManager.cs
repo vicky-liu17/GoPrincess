@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HealthPointManager : MonoBehaviour
 {
     static public float healthPoint;
-    static public int initialHealthPoint = 10;
+    static public int initialHealthPoint = 60;
     public Slider healthBar;
     private const float coef = 0.4f;
 
@@ -34,7 +34,7 @@ public class HealthPointManager : MonoBehaviour
     {
         healthPoint = healthPoint + healthPointsToAdd;
     }
-    public static void DedcuteHealthPoint (int healthPointsToDeduct)
+    public static void DeductHealthPoint(int healthPointsToDeduct)
     {
         healthPoint = healthPoint - healthPointsToDeduct;
     }
