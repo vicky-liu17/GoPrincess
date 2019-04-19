@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Dog
+  - dog_unseen
+  - Dog_thought_pos
+  - dogThought
   layers:
   - Default
   - TransparentFX
