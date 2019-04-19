@@ -1,13 +1,13 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthPointManager : MonoBehaviour
 {
-    public static int healthPoint;
-    public static int initialHealthPoint = 10;
+    static public float healthPoint;
+    static public int initialHealthPoint = 10;
     public Slider healthBar;
-   
+    private const float coef = 0.4f;
 
     //Text text;
 
@@ -16,11 +16,12 @@ public class HealthPointManager : MonoBehaviour
         //text = GetComponent<Text>();
         healthBar = GetComponent<Slider>();
         healthPoint = initialHealthPoint;
-        healthBar.value = initialHealthPoint;
+        healthBar.value = healthPoint;
     }
 
     void Update()
     {
+        healthPoint -= coef * Time.deltaTime;
         if (healthPoint < 0)
         {
             gameObject.SetActive(false);
