@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chamber.unity
     guid: 9ba926b8b84c2e44a9d27ee01328ed17
+  - enabled: 1
+    path: Assets/Scenes/Wizard.unity
+    guid: e7b54d39ea6384a47aaf80a064dffb82
   m_configObjects: {}
