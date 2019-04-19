@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7091221087598458602}
   - component: {fileID: 3126299247114958177}
   - component: {fileID: 6495035220447540814}
+  - component: {fileID: 1374272481653893583}
   m_Layer: 5
   m_Name: HealthButton
   m_TagString: Untagged
@@ -142,3 +143,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPointsToAdd: 10
+--- !u!114 &1374272481653893583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349114308302262856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f362c1f5471494aa91e7dbb4c3a995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
